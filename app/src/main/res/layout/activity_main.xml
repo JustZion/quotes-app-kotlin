@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="................"
         android:textColor="@color/white"
-        tools:text="Teesting to see the h jjffs"
+        tools:text="Testing to see the h jjffs"
         android:gravity="center"
         android:textSize="24sp"
         android:layout_centerInParent="true"
