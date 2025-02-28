@@ -3,11 +3,11 @@ package com.example.quotesapp
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RefrofitInstance {
+object RetrofitInstance {
 
-    private val BASE_URL = "https://zenquotes.io/api/random"
+    private const val BASE_URL = "https://zenquotes.io/api/"
 
-    private fun retrofitInstance(): Retrofit{
+    private fun getInstance(): Retrofit{
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -15,7 +15,7 @@ object RefrofitInstance {
 
     }
 
-    val quoteApi: QuoteApp = retrofitInstance().create(QuoteApp::class.java)
+    val quoteApi: QuoteApp = getInstance().create(QuoteApp::class.java)
 
 
 }
